@@ -1,0 +1,52 @@
+.ButtonHexagon {
+        position: relative;
+        width: 134px;
+        height: 116px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+        }
+        &:focus, &:visited, &:active, &:hover, &:focus{
+            outline: none !important;
+            border-color: transparent;
+            color: transparent;
+            border-width: 0;
+            box-shadow: none !important;
+        }
+    img {
+        width: 134px;
+        height: 116px;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;        
+    }
+    .ant-btn {
+        background: transparent;
+        border-width: 0;
+        height: auto;
+    }
+    .Icon {
+        height: 56px;
+    }
+    .Button-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    button {
+        &:focus, &:visited, &:active, &:hover, &:focus{
+            outline: none !important;
+            border-color: transparent;
+            color: transparent;
+            border-width: 0;
+        }
+    }
+
+}

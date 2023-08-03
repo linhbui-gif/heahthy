@@ -1,0 +1,62 @@
+@import '../../assets/styles/_main.scss';
+.RecordSecond {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding: 16px 24px;
+  background: $black;
+  &-legend {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    color: $white;
+    display: flex;
+    gap: 16px;
+    align-items: top;
+    span {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.11px;
+      color: $white;
+    }
+  }
+  .ant-tabs {
+    flex-direction: column-reverse;
+    gap: 16px;
+    .ant-tabs-tab {
+      font-family: 'Hiragino Kaku Gothic Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.075px;
+      color: $yellow;
+      width: 56px;
+      height: 24px;
+      background: $white;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      &.ant-tabs-tab-active {
+        background: $yellow;
+        .ant-tabs-tab-btn {
+          color: $white;
+        }
+      }
+    }
+    .ant-tabs-ink-bar {
+      background: transparent;
+    }
+  }
+  .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    content: none;
+  }
+  
+}

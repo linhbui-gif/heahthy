@@ -1,0 +1,16 @@
+@import '../../assets/styles/global';
+
+.Footer {
+  background: $black;
+  padding: 56px 0;
+
+  &-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    max-width: 681px;
+    @media (max-width:767px) {
+      flex-direction: column;
+    }
+  }
+}
